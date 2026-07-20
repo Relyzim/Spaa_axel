@@ -1,161 +1,194 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nos animaux — SPAA</title>
-<meta name="description" content="Les animaux du refuge SPAA disponibles à l'adoption : chiens, chats et NAC.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,600&family=Karla:wght@400;700&display=swap" rel="stylesheet">
-<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-<meta property="og:title" content="SPAA — Refuge animalier">
-<meta property="og:description" content="Adoption, protection et soins des animaux abandonnés.">
-<meta property="og:type" content="website">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nos animaux — SPAA</title>
+  <meta name="description" content="Les animaux du refuge SPAA disponibles à l'adoption : chiens, chats et NAC.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,600&family=Karla:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <meta property="og:title" content="SPAA — Refuge animalier">
+  <meta property="og:description" content="Adoption, protection et soins des animaux abandonnés.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-<header class="site">
-  <div class="header-inner">
-    <a class="logo" href="index.html"><span class="paw" aria-hidden="true">🐾</span>SPAA</a>
-    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
-    <nav class="main" aria-label="Navigation principale">
-      <a href="index.html">Accueil</a>
-      <a href="association.html">L'association</a>
-      <a href="animaux.html" aria-current="page">Nos animaux</a>
-      <a href="actualites.html">Actualités</a>
-      <a href="agenda.html">Agenda</a>
-      <a href="blog.html">Conseils &amp; FAQ</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <a class="btn btn-pine header-cta" href="contact.html">Adopter</a>
-    <label for="nav-toggle" class="nav-burger" aria-label="Ouvrir le menu">☰</label>
-  </div>
-</header>
+  <header class="site">
+    <div class="header-inner">
+      <a class="logo" href="index.html"><span class="paw" aria-hidden="true">🐾</span>SPAA</a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+      <nav class="main" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a href="association.html">L'association</a>
+        <a href="animaux.html" aria-current="page">Nos animaux</a>
+        <a href="actualites.html">Actualités</a>
+        <a href="agenda.html">Agenda</a>
+        <a href="blog.html">Conseils &amp; FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="btn btn-pine header-cta" href="contact.html">Adopter</a>
+      <label for="nav-toggle" class="nav-burger" aria-label="Ouvrir le menu">☰</label>
+    </div>
+  </header>
 
-<div class="page-hero">
-  <div class="page-hero-inner">
-    <h1>Nos animaux</h1>
-    <p>Chaque pensionnaire a son histoire et son caractère. Venez les rencontrer au refuge — l'équipe vous aidera à trouver celui qui correspond à votre mode de vie.</p>
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <h1>Nos animaux</h1>
+      <p>Chaque pensionnaire a son histoire et son caractère. Venez les rencontrer au refuge — l'équipe vous aidera à
+        trouver celui qui correspond à votre mode de vie.</p>
+    </div>
   </div>
-</div>
 
-<section class="block">
-  <div class="filters" role="group" aria-label="Filtres">
-    <button class="chip active" type="button" data-filter="tous" aria-pressed="true">Tous</button>
-    <button class="chip" type="button" data-filter="chien" aria-pressed="false">Chiens</button>
-    <button class="chip" type="button" data-filter="chat" aria-pressed="false">Chats</button>
-    <button class="chip" type="button" data-filter="autre" aria-pressed="false">Autres</button>
-    <button class="chip" type="button" data-filter="disponible" aria-pressed="false">Disponibles</button>
-  </div>
-  <div class="animals">
-    <div class="animal-card" data-species="chien" data-status="disponible">
-      <div class="animal-photo p-amber"><img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=800&q=80" alt="Illustration de Nala" loading="lazy" onerror="this.onerror=null;this.src='assets/nala.svg'"></div>
-      <div class="animal-body">
-        <p class="name">Nala</p>
-        <p class="meta">Chienne croisée berger · 2 ans</p>
-        <span class="badge ok">Disponible</span>
-        <p style="font-size:14px;color:var(--ink-soft);margin:12px 0 0;">Joueuse et affectueuse, Nala s'entend bien avec les enfants. Elle a besoin d'un jardin.</p>
+  <section class="block">
+    <div class="filters" role="group" aria-label="Filtres">
+      <button class="chip active" type="button" data-filter="tous" aria-pressed="true">Tous</button>
+      <button class="chip" type="button" data-filter="chien" aria-pressed="false">Chiens</button>
+      <button class="chip" type="button" data-filter="chat" aria-pressed="false">Chats</button>
+      <button class="chip" type="button" data-filter="autre" aria-pressed="false">Autres</button>
+      <button class="chip" type="button" data-filter="disponible" aria-pressed="false">Disponibles</button>
+    </div>
+    <div class="animals">
+      <div class="animal-card" data-species="chien" data-status="disponible">
+        <div class="animal-photo p-amber"><img
+            src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=800&q=80"
+            alt="Illustration de Nala" loading="lazy" onerror="this.onerror=null;this.src='assets/nala.svg'"></div>
+        <div class="animal-body">
+          <p class="name">Nala</p>
+          <p class="meta">Chienne croisée berger · 2 ans</p>
+          <span class="badge ok">Disponible</span>
+          <p style="font-size:14px;color:var(--ink-soft);margin:12px 0 0;">Joueuse et affectueuse, Nala s'entend bien
+            avec les enfants. Elle a besoin d'un jardin.</p>
+        </div>
+      </div>
+      <div class="animal-card" data-species="chat" data-status="disponible">
+        <div class="animal-photo p-pine"><img
+            src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=800&q=80"
+            alt="Illustration de Oscar" loading="lazy" onerror="this.onerror=null;this.src='assets/oscar.svg'"></div>
+        <div class="animal-body">
+          <p class="name">Oscar</p>
+          <p class="meta">Chat européen · 1 an</p>
+          <span class="badge ok">Disponible</span>
+          <p style="font-size:14px;color:var(--ink-soft);margin:12px 0 0;">Calme et câlin, Oscar est parfait pour un
+            appartement. Il s'entend avec les autres chats.</p>
+        </div>
+      </div>
+      <div class="animal-card" data-species="autre" data-status="soins">
+        <div class="animal-photo p-lilac"><img
+            src="https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?auto=format&fit=crop&w=800&q=80"
+            alt="Illustration de Pixel" loading="lazy" onerror="this.onerror=null;this.src='assets/pixel.svg'"></div>
+        <div class="animal-body">
+          <p class="name">Pixel</p>
+          <p class="meta">Lapin bélier · 8 mois</p>
+          <span class="badge care">En soins</span>
+          <p style="font-size:14px;color:var(--ink-soft);margin:12px 0 0;">Pixel se remet doucement. Il sera bientôt
+            disponible pour une famille douce et patiente.</p>
+        </div>
+      </div>
+      <div class="animal-card" data-species="chien" data-status="disponible">
+        <div class="animal-photo p-sky"><img
+            src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=800&q=80"
+            alt="Illustration de Rio" loading="lazy" onerror="this.onerror=null;this.src='assets/rio.svg'"></div>
+        <div class="animal-body">
+          <p class="name">Rio</p>
+          <p class="meta">Chien croisé labrador · 5 ans</p>
+          <span class="badge ok">Disponible</span>
+          <p style="font-size:14px;color:var(--ink-soft);margin:12px 0 0;">Rio est un grand sportif : il lui faut des
+            maîtres actifs et de longues balades.</p>
+        </div>
+      </div>
+      <div class="animal-card" data-species="chat" data-status="disponible">
+        <div class="animal-photo p-amber"><img
+            src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?auto=format&fit=crop&w=800&q=80"
+            alt="Illustration de Mia" loading="lazy" onerror="this.onerror=null;this.src='assets/mia.svg'"></div>
+        <div class="animal-body">
+          <p class="name">Mia</p>
+          <p class="meta">Chatte tigrée · 3 ans</p>
+          <span class="badge ok">Disponible</span>
+          <p style="font-size:14px;color:var(--ink-soft);margin:12px 0 0;">Indépendante mais très douce, Mia préfère un
+            foyer calme, sans jeunes enfants.</p>
+        </div>
+      </div>
+      <div class="animal-card" data-species="autre" data-status="disponible">
+        <div class="animal-photo p-pine"><img
+            src="https://images.unsplash.com/photo-1548767797-d8c844163c4c?auto=format&fit=crop&w=800&q=80"
+            alt="Illustration de Caramel" loading="lazy" onerror="this.onerror=null;this.src='assets/caramel.svg'">
+        </div>
+        <div class="animal-body">
+          <p class="name">Caramel</p>
+          <p class="meta">Cochon d'Inde · 1 an</p>
+          <span class="badge ok">Disponible</span>
+          <p style="font-size:14px;color:var(--ink-soft);margin:12px 0 0;">Caramel adore la compagnie : idéalement à
+            adopter avec un congénère.</p>
+        </div>
+      </div>
+      <div class="animal-card" data-species="chien" data-status="soins">
+        <div class="animal-photo p-sky"><img
+            src="https://images.unsplash.com/photo-1568572933382-74d440642117?auto=format&fit=crop&w=800&q=80"
+            alt="Illustration de Falco" loading="lazy" onerror="this.onerror=null;this.src='assets/falco.svg'"></div>
+        <div class="animal-body">
+          <p class="name">Falco</p>
+          <p class="meta">Chien berger belge · 4 ans</p>
+          <span class="badge care">En soins</span>
+          <p style="font-size:14px;color:var(--ink-soft);margin:12px 0 0;">Falco suit un traitement vétérinaire. Les
+            pré-visites sont déjà possibles.</p>
+        </div>
+      </div>
+      <div class="animal-card" data-species="chat" data-status="adoptee">
+        <div class="animal-photo p-lilac"><img
+            src="https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?auto=format&fit=crop&w=800&q=80"
+            alt="Illustration de Luna" loading="lazy" onerror="this.onerror=null;this.src='assets/luna.svg'"></div>
+        <div class="animal-body">
+          <p class="name">Luna</p>
+          <p class="meta">Chatte noire · 6 ans</p>
+          <span class="badge adopted">Adoptée</span>
+          <p style="font-size:14px;color:var(--ink-soft);margin:12px 0 0;">Luna a rejoint sa nouvelle famille en juin
+            2026. Belle route, Luna !</p>
+        </div>
       </div>
     </div>
-    <div class="animal-card" data-species="chat" data-status="disponible">
-      <div class="animal-photo p-pine"><img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=800&q=80" alt="Illustration de Oscar" loading="lazy" onerror="this.onerror=null;this.src='assets/oscar.svg'"></div>
-      <div class="animal-body">
-        <p class="name">Oscar</p>
-        <p class="meta">Chat européen · 1 an</p>
-        <span class="badge ok">Disponible</span>
-        <p style="font-size:14px;color:var(--ink-soft);margin:12px 0 0;">Calme et câlin, Oscar est parfait pour un appartement. Il s'entend avec les autres chats.</p>
-      </div>
-    </div>
-    <div class="animal-card" data-species="autre" data-status="soins">
-      <div class="animal-photo p-lilac"><img src="https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?auto=format&fit=crop&w=800&q=80" alt="Illustration de Pixel" loading="lazy" onerror="this.onerror=null;this.src='assets/pixel.svg'"></div>
-      <div class="animal-body">
-        <p class="name">Pixel</p>
-        <p class="meta">Lapin bélier · 8 mois</p>
-        <span class="badge care">En soins</span>
-        <p style="font-size:14px;color:var(--ink-soft);margin:12px 0 0;">Pixel se remet doucement. Il sera bientôt disponible pour une famille douce et patiente.</p>
-      </div>
-    </div>
-    <div class="animal-card" data-species="chien" data-status="disponible">
-      <div class="animal-photo p-sky"><img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=800&q=80" alt="Illustration de Rio" loading="lazy" onerror="this.onerror=null;this.src='assets/rio.svg'"></div>
-      <div class="animal-body">
-        <p class="name">Rio</p>
-        <p class="meta">Chien croisé labrador · 5 ans</p>
-        <span class="badge ok">Disponible</span>
-        <p style="font-size:14px;color:var(--ink-soft);margin:12px 0 0;">Rio est un grand sportif : il lui faut des maîtres actifs et de longues balades.</p>
-      </div>
-    </div>
-    <div class="animal-card" data-species="chat" data-status="disponible">
-      <div class="animal-photo p-amber"><img src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?auto=format&fit=crop&w=800&q=80" alt="Illustration de Mia" loading="lazy" onerror="this.onerror=null;this.src='assets/mia.svg'"></div>
-      <div class="animal-body">
-        <p class="name">Mia</p>
-        <p class="meta">Chatte tigrée · 3 ans</p>
-        <span class="badge ok">Disponible</span>
-        <p style="font-size:14px;color:var(--ink-soft);margin:12px 0 0;">Indépendante mais très douce, Mia préfère un foyer calme, sans jeunes enfants.</p>
-      </div>
-    </div>
-    <div class="animal-card" data-species="autre" data-status="disponible">
-      <div class="animal-photo p-pine"><img src="https://images.unsplash.com/photo-1548767797-d8c844163c4c?auto=format&fit=crop&w=800&q=80" alt="Illustration de Caramel" loading="lazy" onerror="this.onerror=null;this.src='assets/caramel.svg'"></div>
-      <div class="animal-body">
-        <p class="name">Caramel</p>
-        <p class="meta">Cochon d'Inde · 1 an</p>
-        <span class="badge ok">Disponible</span>
-        <p style="font-size:14px;color:var(--ink-soft);margin:12px 0 0;">Caramel adore la compagnie : idéalement à adopter avec un congénère.</p>
-      </div>
-    </div>
-    <div class="animal-card" data-species="chien" data-status="soins">
-      <div class="animal-photo p-sky"><img src="https://images.unsplash.com/photo-1568572933382-74d440642117?auto=format&fit=crop&w=800&q=80" alt="Illustration de Falco" loading="lazy" onerror="this.onerror=null;this.src='assets/falco.svg'"></div>
-      <div class="animal-body">
-        <p class="name">Falco</p>
-        <p class="meta">Chien berger belge · 4 ans</p>
-        <span class="badge care">En soins</span>
-        <p style="font-size:14px;color:var(--ink-soft);margin:12px 0 0;">Falco suit un traitement vétérinaire. Les pré-visites sont déjà possibles.</p>
-      </div>
-    </div>
-    <div class="animal-card" data-species="chat" data-status="adoptee">
-      <div class="animal-photo p-lilac"><img src="https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?auto=format&fit=crop&w=800&q=80" alt="Illustration de Luna" loading="lazy" onerror="this.onerror=null;this.src='assets/luna.svg'"></div>
-      <div class="animal-body">
-        <p class="name">Luna</p>
-        <p class="meta">Chatte noire · 6 ans</p>
-        <span class="badge adopted">Adoptée</span>
-        <p style="font-size:14px;color:var(--ink-soft);margin:12px 0 0;">Luna a rejoint sa nouvelle famille en juin 2026. Belle route, Luna !</p>
-      </div>
-    </div>
-  </div>
-  <p id="no-result">Aucun animal ne correspond à ce filtre pour le moment.</p>
-</section>
+    <p id="no-result">Aucun animal ne correspond à ce filtre pour le moment.</p>
+  </section>
 
-<div class="cta-band">
-  <div class="cta-inner">
-    <div>
-      <h2>Un coup de cœur ?</h2>
-      <p>Contactez-nous pour organiser une rencontre au refuge.</p>
+  <div class="cta-band">
+    <div class="cta-inner">
+      <div>
+        <h2>Un coup de cœur ?</h2>
+        <p>Contactez-nous pour organiser une rencontre au refuge.</p>
+      </div>
+      <a class="btn btn-pine" href="contact.html">Prendre contact</a>
     </div>
-    <a class="btn btn-pine" href="contact.html">Prendre contact</a>
   </div>
-</div>
 
-<footer class="site">
-  <div class="footer-inner">
-    <div>
-      <h3>🐾 SPAA</h3>
-      <p>Refuge animalier — association loi 1901. Nous accueillons et protégeons les animaux abandonnés, et les accompagnons vers l'adoption.</p>
+  <footer class="site">
+    <div class="footer-inner">
+      <div>
+        <h3>🐾 SPAA</h3>
+        <p>Refuge animalier — association loi 1901. Nous accueillons et protégeons les animaux abandonnés, et les
+          accompagnons vers l'adoption.</p>
+      </div>
+      <div>
+        <h3>Le site</h3>
+        <a href="animaux.html">Nos animaux</a>
+        <a href="actualites.html">Actualités</a>
+        <a href="agenda.html">Agenda</a>
+        <a href="blog.html">Conseils &amp; FAQ</a>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p>📞 02 XX XX XX XX</p>
+        <p>✉️ contact@spaa.fr</p>
+        <p>Facebook · Instagram</p>
+      </div>
     </div>
-    <div>
-      <h3>Le site</h3>
-      <a href="animaux.html">Nos animaux</a>
-      <a href="actualites.html">Actualités</a>
-      <a href="agenda.html">Agenda</a>
-      <a href="blog.html">Conseils &amp; FAQ</a>
-    </div>
-    <div>
-      <h3>Contact</h3>
-      <p>📞 02 XX XX XX XX</p>
-      <p>✉️ contact@spaa.fr</p>
-      <p>Facebook · Instagram</p>
-    </div>
-  </div>
-  <div class="footer-bottom">SPAA — Association loi 1901 · <a href="mentions-legales.html" style="display:inline">Mentions légales</a></div>
-</footer>
-<script src="script.js"></script>
+    <div class="footer-bottom">SPAA — Association loi 1901 · <a href="mentions-legales.html"
+        style="display:inline">Mentions légales</a></div>
+  </footer>
+  <script src="script.js"></script>
 </body>
+
 </html>
